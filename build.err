@@ -1,0 +1,3 @@
+
+> Build error occurred
+[Error: spawn EPERM] { errno: -4048, code: 'EPERM', syscall: 'spawn' }

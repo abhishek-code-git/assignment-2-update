@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #f6f1e8;
+  --muted: #b5afa5;
+  --gold: #d4af37;
+  --gold-soft: rgba(212, 175, 55, 0.2);
+  --border: rgba(255, 255, 255, 0.09);
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #050505;
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+  overflow: hidden;
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(212, 175, 55, 0.12), transparent 24%),
+    radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.06), transparent 20%),
+    linear-gradient(180deg, #090909 0%, #050505 42%, #030303 100%);
+}
+
+img,
+video {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+  color: #fff;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -14px, 0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeScale {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes slowZoom {
+  0% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1.11);
+  }
+}
+
+@layer components {
+  .display-title {
+    font-family: var(--font-display), serif;
+    letter-spacing: -0.04em;
+  }
+
+  .deck-shell {
+    @apply relative h-screen w-screen overflow-hidden bg-[#050505] text-white;
+  }
+
+  .deck-stage {
+    @apply relative h-full w-full overflow-hidden;
+  }
+
+  .deck-frame {
+    @apply relative flex h-full w-full overflow-hidden;
+  }
+
+  .deck-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .deck-grain {
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px),
+      radial-gradient(circle at 80% 30%, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px),
+      radial-gradient(circle at 60% 70%, rgba(255, 255, 255, 0.04) 0 1px, transparent 1px);
+    background-size: 120px 120px;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+  }
+
+  .glass-panel {
+    @apply border border-white/10 bg-white/[0.05] backdrop-blur-xl;
+  }
+
+  .premium-outline {
+    background:
+      linear-gradient(#050505, #050505) padding-box,
+      linear-gradient(135deg, rgba(212, 175, 55, 0.92), rgba(255, 255, 255, 0.12)) border-box;
+  }
+
+  .gold-gradient {
+    background: linear-gradient(90deg, #b8922e, #f6df8e, #d4af37, #fff0ba);
+    background-size: 300% 100%;
+    animation: shimmer 6s linear infinite;
+  }
+
+  .float-slow {
+    animation: floatSlow 8s ease-in-out infinite;
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translate3d(0, 24px, 0);
+    transition:
+      opacity 0.7s ease,
+      transform 0.7s ease;
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .video-zoom {
+    animation: slowZoom 18s ease-in-out infinite alternate;
+  }
+
+  .slide-enter {
+    animation: fadeScale 0.9s ease both;
+  }
+
+  .text-rise {
+    animation: fadeUp 0.8s ease both;
+  }
+}

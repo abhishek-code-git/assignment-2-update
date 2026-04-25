@@ -1,0 +1,25 @@
+
+> dubai-mall-sales-deck@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.15
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.56.1:3000
+
+ ✓ Starting...
+ ✓ Ready in 9.9s
+ ○ Compiling / ...
+ ✓ Compiled / in 25.9s (560 modules)
+ ○ Compiling /_not-found ...
+ ✓ Compiled /_not-found in 4.2s (565 modules)
+ GET / 404 in 31764ms
+ GET / 200 in 1842ms
+ GET / 200 in 758ms
+ ✓ Compiled in 4.4s (238 modules)
+ ✓ Compiled in 1514ms (238 modules)
+ GET / 200 in 674ms
+ ✓ Compiled in 3.1s (562 modules)
+ GET / 200 in 606ms
+ GET / 200 in 292ms
+ ○ Compiling /_error ...
+ GET / 500 in 6198ms

@@ -1,0 +1,64 @@
+(node:20272) ExperimentalWarning: CommonJS module C:\Users\Amit\Downloads\Mall-main\Mall-main\node_modules\tailwindcss\lib\lib\load-config.js is loading ES Module C:\Users\Amit\Downloads\Mall-main\Mall-main\tailwind.config.ts using require().
+Support for loading ES Module in require() is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+[Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\0.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\0.pack.gz'
+}
+[Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\1.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\1.pack.gz'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\server-development\\1.pack.gz'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\server-development\0.pack.gz'
+[Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\client-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\client-development\\1.pack.gz'
+}
+ ⨯ unhandledRejection: [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\client-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\client-development\\1.pack.gz'
+}
+ ⨯ unhandledRejection:  [Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\client-development\1.pack.gz'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'stat',
+  path: 'C:\\Users\\Amit\\Downloads\\Mall-main\\Mall-main\\.next\\cache\\webpack\\client-development\\1.pack.gz'
+}
+<w> [webpack.cache.PackFileCacheStrategy] Caching failed for pack: Error: ENOENT: no such file or directory, stat 'C:\Users\Amit\Downloads\Mall-main\Mall-main\.next\cache\webpack\client-development\1.pack.gz'
+ ⨯ SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>) {
+  page: '/'
+}
+^C
